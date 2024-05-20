@@ -59,6 +59,10 @@ nav a:hover {
 	color: #fffb54;
 }
 
+nav ul {
+	list-style: none;
+}
+
 footer {
 	align-items: center;
 	display: flex;

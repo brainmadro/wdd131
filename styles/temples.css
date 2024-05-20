@@ -1,0 +1,94 @@
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+}
+
+header h2 {
+	align-self: center;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  grid-template-columns: 1fr;
+}
+
+nav {
+  background-color: transparent;
+  display: none;
+  height: 100vh;
+	transition: all 2s ease-in-out;
+}
+
+nav.active {
+  display: flex;
+	flex-direction: column;
+  animation: fade .5s;
+	grid-column: 1 / 3;
+}
+
+nav ul {
+  overflow: hidden;
+  margin: 0;
+}
+
+nav ul li {
+  display: block;
+	color: #fff;
+	font-size: 1.7rem;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #0e181e;
+}
+
+.hamburger {
+  padding-left: 50%;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger .line{
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+#templeImages figcaption {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+@keyframes fade {
+  from{transform: translateX(-200px); opacity: 0;}
+  to {transform: translateX(0px); opacity: 1;}
+}
