@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Country Page - Dynamic Web Fundamentals - Brian Madroñero</title>
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/place.css">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/place.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>England</h1>
+	</header>
+	<main>
+		<picture>
+			<source srcset="images/pexels-dominikagregus-672532.webp" media="(min-width: 500px)" />
+			<img
+			  src="images/pexels-samuel-wolfl-628277-1427578.webp"
+			  alt="England wonderfull outlook"
+			  width="420"
+			  height="auto"
+			/>
+		  </picture>
+		<section class="data-container">
+			<h2>Data</h2>
+			<div class="data-content">
+				<span class="label">Area: </span>
+				<span class="value">130,279 km²</span>
+				<span class="label">Population: </span>
+				<span class="value">55.977.200</span>
+				<span class="label">Capital: </span>
+				<span class="value">London</span>
+				<span class="label">Languages: </span>
+				<span class="value">English</span>
+				<span class="label">Currency: </span>
+				<span class="value">The Pound Sterling</span>
+				<span class="label">Time Zone: </span>
+				<span class="value">GMT+1</span>
+				<span class="label">Calling Code: </span>
+				<span class="value">+44</span>
+				<span class="label">Internet TLD:</span>
+				<span class="value">.uk</span>
+			</div>
+		</section>
+		<section class="weather-container">
+			<h2>Weather</h2>
+			<img id="weatherIcon" src="images/weather_icon.svg" alt="Weather Icon" width="90">
+			<div class="weather-content">
+				<span class="label">Temperature: </span>
+				<span id="temp" class="value"></span>
+				<span class="label">Conditions: </span>
+				<span id="conditions" class="value">Partly Cloudy</span>
+				<span class="label">Wind: </span>
+				<span id="wind" class="value"></span>
+				<span class="label">Wind Chill: </span>
+				<span id="windChill" class="value"></span>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera Colombia</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+</html>

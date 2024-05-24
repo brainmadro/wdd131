@@ -1,0 +1,98 @@
+:root {
+  --primary-bg-color: #d11d30;
+}
+
+header,
+footer {
+  background-color: var(--primary-bg-color);
+}
+
+header h1 {
+  padding: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: unset;
+  max-width: unset;
+  padding: 0;
+}
+
+.data-container,
+.weather-container {
+  align-items: center;
+  border-bottom: 1px solid #022169;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.data-container h2,
+.weather-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.data-content,
+.weather-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.label {
+  font-weight: 600;
+  text-align: right;
+}
+
+.value {
+  text-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+	main {
+		position: relative;
+	}
+
+	main picture img {
+		width: 100%;
+	}
+
+  .data-container,
+  .weather-container {
+		background: rgba(255, 255, 255, .8);
+    position: absolute;
+  }
+
+	.data-container {
+		left: 1.5rem;
+		top: 2.5rem;
+  }
+
+	.weather-container {
+		bottom: 2.5rem;
+		right: 1.5rem;
+  }
+
+	.data-container h2,
+	.weather-container h2 {
+		background-color: #022169;
+		color: #fff;
+		margin-right: 35%;
+		padding: 1rem;
+		text-align: left;
+		width: 80%;
+	}
+
+	.weather-container h2 {
+		margin-right: 45%;
+	}
+
+	.weather-container h2::after {
+		content: " ⛅";
+	}
+
+	#weatherIcon {
+		display: none;
+	}
+}
