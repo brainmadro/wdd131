@@ -79,6 +79,15 @@ nav ul li:hover {
   background-color: #0e181e;
 }
 
+nav a {
+	color: #fff;
+	padding: inherit;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
 .hamburger {
   padding-left: 50%;
 }

@@ -126,6 +126,7 @@ hamburger$.addEventListener("click", function () {
 
 for (const element of menu$.children) {
   element.addEventListener("click", (event) => {
+    event.preventDefault()
     const category = event.target.dataset.category;
     imagesContainer$.innerHTML = "";
     populateGallery(category);
