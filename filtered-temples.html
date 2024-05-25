@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/ftemples.css">
+	<link rel="stylesheet" href="styles/ftemples-large.css">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/ftemples.js" defer></script>
+	<title>Temple Album - Dynamic Web Fundamentals - Brian Madroñero</title>
+</head>
+<body>
+	<header>
+		<h2>Temple Album</h2>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		  </div>
+		<nav>
+			<ul class="menu-content">
+				<li data-category="home">Home</li>
+				<li data-category="old">Old</li>
+				<li data-category="new">New</li>
+				<li data-category="large">Large</li>
+				<li data-category="small">Small</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1 id="sectionTitle"></h2>
+		<section id="templeImages"></section>
+	</main>
+	<footer>
+		<p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera Colombia</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+</html>

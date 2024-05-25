@@ -1,0 +1,131 @@
+:root {
+  --alink: #0000ee;
+  --avisited: #551a8b;
+  --lightgray: rgb(240, 240, 240);
+  --gray: rgb(150, 150, 150);
+  --darkgray: rgb(50, 50, 50);
+  --byuiblue: rgb(0, 110, 182);
+  --navy: rgb(0, 0, 128);
+  --red: rgb(182, 0, 19);
+  --purple: rgb(103, 48, 155, .2);
+  --mustard: rgb(182, 163, 0);
+  --callout: rgb(230, 243, 254);
+  --error: rgb(255, 215, 225);
+  --warning: rgb(255, 255, 225);
+  --details: rgb(238, 254, 238);
+  --padd: 0.5rem;
+  --bord: 1px solid rgba(0, 0, 0, 0.1);
+}
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+}
+
+header h2 {
+	align-self: center;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+nav {
+  background-color: transparent;
+  display: none;
+  height: 100vh;
+	transition: all 2s ease-in-out;
+}
+
+nav.active {
+  display: flex;
+	flex-direction: column;
+  animation: fade .5s;
+	grid-column: 1 / 3;
+}
+
+nav ul {
+  overflow: hidden;
+  margin: 0;
+}
+
+nav ul li {
+  display: block;
+	color: #fff;
+	font-size: 1.7rem;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #0e181e;
+}
+
+.hamburger {
+  padding-left: 50%;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger .line{
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.temple-card {
+  background-color: var(--lightgray);
+  border: var(--bord);
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.temple-card span {
+  text-align: center;
+}
+
+.temple-card h3 {
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+.temple-card img {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: 1em 0;
+}
+
+@keyframes fade {
+  from{transform: translateX(-200px); opacity: 0;}
+  to {transform: translateX(0px); opacity: 1;}
+}
