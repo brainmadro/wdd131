@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Add your product review">
+	<meta name="author" content="Brian Madroñero">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/form.css">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/form.js" defer></script>
+	<title>Product Review - Dynamic Web Fundamentals - Brian Madroñero</title>
+</head>
+<body>
+	<header>
+		<h1>Product Review</h1>
+	</header>
+	<main>
+		<form method="get" action="review.html" class="prf">
+			<h3>Product Review</h3>
+			<label>
+				<p class="field_title">Product Name*</p>
+				<select name="productName" id="productName" required>
+					<option value="" disabled selected>Select a Product ...</option>
+				</select>
+			</label>
+			<div>
+				<p class="field_title">Overall Rating*</p>
+				<label><input type="radio" name="rating" id="rating" value="1" required>⭐️</label>
+				<label><input type="radio" name="rating" id="rating" value="2" required>⭐️⭐️</label>
+				<label><input type="radio" name="rating" id="rating" value="3" required>⭐️⭐️⭐️</label>
+				<label><input type="radio" name="rating" id="rating" value="4" required>⭐️⭐️⭐️⭐️</label>
+				<label><input type="radio" name="rating" id="rating" value="5" required>⭐️⭐️⭐️⭐️</label>
+			</div>
+			<label><p class="field_title">Date of Installation*</p><input type="date" name="installationDate" id="installationDate" required></label>
+			<div>
+				<p class="field_title">Which features did you find useful in the product?<br/>(Check all that apply)</p>
+				<label><input type="checkbox" name="feature_durability" id="featureDurability" value="durability">Durability</label>
+				<label><input type="checkbox" name="feature_use" id="featureUse" value="use">Easy to Use</label>
+				<label><input type="checkbox" name="feature_performance" id="featurePerformance" value="performance">Performance</label>
+				<label><input type="checkbox" name="feature_design" id="featureDesign" value="design">Design</label>
+			</div>
+			<label><p class="field_title">Written Review</p><textarea name="review" id="review"></textarea></label>
+			<label><p class="field_title">Your Name</p><input type="text" name="username" id="username"></label>
+			<input type="submit" value="Post Review">
+		</form>
+	</main>
+	<footer>
+		<p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera Colombia</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+</html>

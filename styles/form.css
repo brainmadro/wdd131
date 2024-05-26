@@ -1,0 +1,50 @@
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.field_title {
+	font-weight: 600;
+}
+
+.prf {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1.6rem 1.1rem;
+}
+
+.prf div {
+	display: flex;
+	flex-direction: column;
+}
+
+.prf input,
+.prf select,
+.prf textarea {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: .5rem;
+	width: 100%;
+}
+
+.prf input[type="radio"],
+.prf input[type="checkbox"] {
+	margin-right: .5rem;
+	width: fit-content;
+}
+
+.prf input[type="submit"] {
+	background-color: #27bd2c;
+	border: none;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: auto;
+	padding: .6rem;
+}
