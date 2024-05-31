@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Some Colores
+https://coolors.co/274d4c-2f9595-97b1a6-698996-407076 */
+
+:root {
+	--primary-color: #6A4C93;
+--secondary-color: #4D3272;
+--accent1-color: #F19066;
+--accent2-color: #D79958;
+--heading-font: "Titillium Web", sans-serif;
+--paragraph-font: "Titillium Web", sans-serif;
+--nav-background-color: #F4F1DE;
+--nav-link-color: #6A4C93;
+--nav-hover-link-color: #4D3272;
+--nav-hover-background-color: #D79958;
+
+}
+
+
+body {
+	font-family: var(--paragraph-font);
+	max-width: 960px;
+	padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading-font);
+}
+
+header {
+	background-color: var(--accent1-color);
+	padding: 1rem;
+}
+
+nav {
+	background-color: var(--nav-background-color);
+	font-size: 1.2rem;
+	display: flex;
+}
+
+nav a {
+	display: block;
+	color: var(--nav-link-color);
+	text-decoration: none;
+	padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+	color: var(--nav-link-color);
+}
+
+nav a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+}
+
+p {
+	padding: .3rem;
+}
