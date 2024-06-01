@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --primary-color: #1e91d6;
+  --secondary-color: #001929;
+  --accent1-color: #001929;
+  --accent2-color: #ea5c1f;
+  --heading-font: "Titillium Web", sans-serif;
+  --paragraph-font: "Titillium Web", sans-serif;
+  --nav-background-color: #001929d6;
+  --nav-link-color: #fff;
+}
+body {
+  font-family: var(--paragraph-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+	background: var(--secondary-color);
+  padding: 0;
+  text-align: center;
+}
+header h1 {
+	color: #fff;
+	margin: 0;
+	padding: .5em 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--accent1-color);
+}
+nav {
+	background: var(--nav-background-color);
+	display: flex;
+	justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+nav a, nav a:visited {
+	text-decoration: none;
+	color: var(--nav-link-color);
+}
+nav ul {
+	color: var(--nav-link-color);
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	list-style: none;
+	margin: auto;
+	text-wrap: nowrap;
+	padding: 0;
+}
+nav ul a {
+	padding: 1em;
+}
+nav ul a:hover{
+	cursor: pointer;
+	background-color: var(--nav-link-color);
+	color: var(--nav-background-color);
+}
+p {
+  margin: 15px 0;
+}
+footer {
+	align-items: center;
+	background-color: var(--secondary-color);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.2rem;
+	gap: .4rem;
+}
+main {
+  background: #fff;
+  overflow: hidden;
+  padding: 20px 10%;
+  width: 80%;
+}
