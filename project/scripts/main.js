@@ -27,7 +27,7 @@ if (
 }
 
 coolMessage();
-
+console.log(document.location);
 function addNewsletterSubscribers() {
   const subscribers = localStorage.getItem("subscribers");
 
