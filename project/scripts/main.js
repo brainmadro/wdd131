@@ -20,6 +20,7 @@ if (document.location.pathname == '/project/index.html' || document.location.pat
 }
 
 coolMessage()
+console.log(document.location);
 
 function addNewsletterSubscribers() {
 	const subscribers = localStorage.getItem('subscribers')
