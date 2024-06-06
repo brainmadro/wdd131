@@ -7,7 +7,7 @@
 	<meta name="author" content="Brian Madroñero">
 	<link rel="stylesheet" href="styles/main.css">
 	<script src="scripts/main.js" defer></script>
-	<title>A story about Artificial Intelligence - Brian Madroñero</title>
+	<title>Artificial Intelligence - Brian Madroñero</title>
 </head>
 <body>
     <nav>
@@ -21,52 +21,51 @@
         <h1>Artificial Intelligence</h1>
     </header>
     <main>
-        <section>
-            <h2>What is Artificial Intelligence?</h2>
-            <p>
-                Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning, problem-solving, perception, natural language processing, and the ability to adapt to new contexts.
-            </p>
-        </section>
-        <section>
-            <h2>History of Artificial Intelligence</h2>
-            <p>
-                The concept of intelligent machines has fascinated humanity since ancient times, but it was in the 20th century that AI began to take shape as a scientific field. In 1956, the Dartmouth Conference, considered the formal starting point of AI as a discipline, was held. Since then, the field has experienced multiple phases of optimism and skepticism, known as the "summers" and "winters" of AI.
-            </p>
-        </section>
-        <section>
-            <h2>Types of Artificial Intelligence</h2>
-            <h3>Weak AI</h3>
-            <p>
-                Weak AI, also known as narrow AI, refers to systems designed to perform a specific task, such as virtual assistants (e.g., Siri or Alexa) or recommendation algorithms on Netflix.
-            </p>
-            <h3>Strong AI</h3>
-            <p>
-                Strong AI, or general AI, is a type of AI that has the ability to understand, learn, and apply knowledge broadly and generally, similar to human intelligence. This type of AI is still theoretical and has not been achieved.
-            </p>
-        </section>
-        <section>
-            <h2>Applications of Artificial Intelligence</h2>
-            <p>
-                AI has a wide range of applications in various fields, such as:
-            </p>
-            <ul>
-                <li>Healthcare: Disease diagnosis, development of personalized treatments, medical image analysis.</li>
-                <li>Finance: Fraud detection, algorithmic trading, risk management.</li>
-                <li>Transportation: Autonomous vehicles, route optimization, intelligent traffic systems.</li>
-                <li>Education: Intelligent tutors, personalized learning, student performance analysis.</li>
-                <li>Entertainment: Recommendation engines, content creation, video games.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Challenges and Ethical Considerations</h2>
-            <p>
-                As AI continues to advance, challenges and ethical considerations also arise. Some of the main challenges include data privacy and security, algorithm transparency and explainability, bias and fairness in AI systems, and the impact on employment and the economy.
-            </p>
-            <p>
-                It is crucial that AI development is conducted responsibly and ethically, ensuring that benefits are distributed equitably and risks are minimized.
-            </p>
-        </section>
+        <a href="story.html">
+            <div class="card">
+                <h2>The Rise of AI</h2>
+                <p>
+                    For decades, AI stagnated with only a few dedicated scientists working on it.  But in 2012, a researcher at the University of Toronto made a breakthrough  — and every major tech company wanted in on it.  They were convinced that AI was the next big thing, destined to change the world the way the personal computer, internet, and smart phone all had in previous decades.  The race to be the leader would soon become cutthroat.
+                </p>
+            </div>
+        </a>
+        <a href="concepts.html#ml">
+            <div class="card">
+                <h2>Machine Learning</h2>
+                <p>
+                    Machine learning (ML) is a branch of artificial intelligence (AI) and computer science that focuses on the using data and algorithms to enable AI to imitate the way that humans learn, gradually improving its accuracy.
+                </p>
+            </div>
+        </a>
+        <a href="story.html">
+            <div class="card">
+                <h2>DeepMind</h2>
+                <p>
+                    The start-up was founded by Demis Hassabis, Shane Legg, and Mustafa Suleyman in September 2010. Hassabis and Legg first met at the Gatsby Computational Neuroscience Unit at University College London (UCL).
+                    Demis Hassabis has said that the start-up began working on artificial intelligence technology by teaching it how to play old games from the seventies and eighties, which are relatively primitive compared to the ones available today. Some of those games included Breakout, Pong, and Space Invaders. AI was introduced to one game at a time, without any prior knowledge of its rules. After spending some time learning the game, AI would eventually become an expert in it. "The cognitive processes which the AI goes through are said to be very like those of a human who had never seen the game would use to understand and attempt to master it." The goal of the founders is to create a general-purpose AI that can be useful and effective for almost anything.
+                    Major venture capital firms Horizons Ventures and Founders Fund invested in the company, as well as entrepreneurs Scott Banister, Peter Thiel, and Elon Musk. Jaan Tallinn was an early investor and an adviser to the company. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million, and that it had agreed to take over DeepMind Technologies. The sale to Google took place after Facebook reportedly ended negotiations with DeepMind Technologies in 2013. The company was afterwards renamed Google DeepMind and kept that name for about two years.
+                </p>
+            </div>
+        </a>
+        <a href="concepts.html#ann">
+            <div class="card">
+                <h2>Artificial Neural Network</h2>
+                <p>
+                    Neural networks, or artificial neural networks (ANNs), are comprised of node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network by that node. The “deep” in deep learning is just referring to the number of layers in a neural network. A neural network that consists of more than three layers—which would be inclusive of the input and the output—can be considered a deep learning algorithm or a deep neural network. A neural network that only has three layers is just a basic neural network.
+                </p>
+            </div>
+        </a>
     </main>
+    <div class="newsletter-container">
+        <form method="get" action="newsletter.html">
+			<label>
+				<span>Newsletter</span>
+				<input type="email" name="newsletter" id="newsletter">
+			</label>
+			<input type="submit" value="Subscribe">
+		</form>
+        <span id="subscribers">Total subscribers: 0</span>
+    </div>
     <footer>
         <p>©️ 2024 Brian Madroñero | WDD 131</p>
     </footer>

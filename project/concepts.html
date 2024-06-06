@@ -18,54 +18,92 @@
         </ul>
     </nav>
 	<header>
-        <h1>Artificial Intelligence</h1>
+        <h1>Basic Concepts of AI</h1>
     </header>
     <main>
-        <section>
-            <h2>What is Artificial Intelligence?</h2>
-            <p>
-                Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning, problem-solving, perception, natural language processing, and the ability to adapt to new contexts.
-            </p>
-        </section>
-        <section>
-            <h2>History of Artificial Intelligence</h2>
-            <p>
-                The concept of intelligent machines has fascinated humanity since ancient times, but it was in the 20th century that AI began to take shape as a scientific field. In 1956, the Dartmouth Conference, considered the formal starting point of AI as a discipline, was held. Since then, the field has experienced multiple phases of optimism and skepticism, known as the "summers" and "winters" of AI.
-            </p>
-        </section>
-        <section>
-            <h2>Types of Artificial Intelligence</h2>
-            <h3>Weak AI</h3>
-            <p>
-                Weak AI, also known as narrow AI, refers to systems designed to perform a specific task, such as virtual assistants (e.g., Siri or Alexa) or recommendation algorithms on Netflix.
-            </p>
-            <h3>Strong AI</h3>
-            <p>
-                Strong AI, or general AI, is a type of AI that has the ability to understand, learn, and apply knowledge broadly and generally, similar to human intelligence. This type of AI is still theoretical and has not been achieved.
-            </p>
-        </section>
-        <section>
-            <h2>Applications of Artificial Intelligence</h2>
-            <p>
-                AI has a wide range of applications in various fields, such as:
-            </p>
-            <ul>
-                <li>Healthcare: Disease diagnosis, development of personalized treatments, medical image analysis.</li>
-                <li>Finance: Fraud detection, algorithmic trading, risk management.</li>
-                <li>Transportation: Autonomous vehicles, route optimization, intelligent traffic systems.</li>
-                <li>Education: Intelligent tutors, personalized learning, student performance analysis.</li>
-                <li>Entertainment: Recommendation engines, content creation, video games.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Challenges and Ethical Considerations</h2>
-            <p>
-                As AI continues to advance, challenges and ethical considerations also arise. Some of the main challenges include data privacy and security, algorithm transparency and explainability, bias and fairness in AI systems, and the impact on employment and the economy.
-            </p>
-            <p>
-                It is crucial that AI development is conducted responsibly and ethically, ensuring that benefits are distributed equitably and risks are minimized.
-            </p>
-        </section>
+        <ul>
+            <li class="concept-container">
+                <h2>What is Artificial Intelligence?</h2>
+                <div class="concept-content expanded"> 
+                    <img loading="lazy" src="https://images.pexels.com/photos/16629368/pexels-photo-16629368/free-photo-of-marketing-telefono-inteligente-internet-conexion.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ChatGPT">
+                    <p>Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning, problem-solving, perception, natural language processing, and the ability to adapt to new contexts.</p>
+                    <div class="subtext">
+                        <h4>Speech recognition</h4>
+                        Also known as automatic speech recognition (ASR), computer speech recognition, or speech-to-text, speech recognition uses NLP to process human speech into a written format. Many mobile devices incorporate speech recognition into their systems to conduct voice search—Siri, for example—or provide more accessibility around texting in English or many widely-used languages. See how Don Johnston used IBM Watson Text to Speech to improve accessibility in the classroom with our case study.
+                        <br/>
+                        <h4>Customer service</h4>
+                        Online  virtual agents and chatbots are replacing human agents along the customer journey. They answer frequently asked questions (FAQ) around topics, like shipping, or provide personalized advice, cross-selling products or suggesting sizes for users, changing the way we think about customer engagement across websites and social media platforms. Examples include messaging bots on e-commerce sites with virtual agents , messaging apps, such as Slack and Facebook Messenger, and tasks usually done by virtual assistants and voice assistants. See how Autodesk Inc. used IBM watsonx Assistant to speed up customer response times by 99% with our case study.
+                        <br/>
+                        <h4>Computer vision</h4>
+                        This AI technology enables computers and systems to derive meaningful information from digital images, videos and other visual inputs, and based on those inputs, it can take action. This ability to provide recommendations distinguishes it from image recognition tasks. Powered by convolutional neural networks, computer vision has applications within photo tagging in social media, radiology imaging in healthcare, and self-driving cars within the automotive industry. See how ProMare used IBM Maximo to set a new course for ocean research with our case study.
+                        <br/>
+                        <h4>Supply chain</h4>
+                        Adaptive robotics act on Internet of Things (IoT) device information, and structured and unstructured data to make autonomous decisions. NLP tools can understand human speech and react to what they are being told. Predictive analytics are applied to demand responsiveness, inventory and network optimization, preventative maintenance and digital manufacturing. Search and pattern recognition algorithms—which are no longer just predictive, but hierarchical—analyze real-time data, helping supply chains to react to machine-generated, augmented intelligence, while providing instant visibility and transparency. See how Hendrickson used IBM Sterling to fuel real-time transactions with our case study.
+                        <br/>
+                        <h4>Weather forecasting</h4>
+                        The weather models broadcasters rely on to make accurate forecasts consist of complex algorithms run on supercomputers. Machine-learning techniques enhance these models by making them more applicable and precise. See how Emnotion used IBM Cloud to empower weather-sensitive enterprises to make more proactive, data-driven decisions with our case study.
+                        <br/>
+                        <h4>Anomaly detection</h4>
+                        AI models can comb through large amounts of data and discover atypical data points within a dataset. These anomalies can raise awareness around faulty equipment, human error, or breaches in security. See how Netox used IBM QRadar to protect digital businesses from cyberthreats with our case study.
+                    </div>
+                </div>
+            </li>
+            <li class="concept-container">
+                <h2>Machine Learning</h2>
+                <div id="ml" class="concept-content">
+                    <p>Machine Learning is a subset of artificial intelligence that enables computers to learn from and make decisions based on data. Rather than being explicitly programmed to perform a specific task, machine learning algorithms use statistical techniques to identify patterns and make predictions or decisions without human intervention. By training on large datasets, these algorithms can improve their performance over time, becoming more accurate and efficient. Machine Learning is used in a wide range of applications, from recommendation systems and image recognition to fraud detection and autonomous driving, transforming how we interact with technology and making data-driven insights a fundamental part of modern innovation.</p>
+                    <div class="subtext">
+                        As machine learning technology has developed, it has certainly made our lives easier. However, implementing machine learning in businesses has also raised a number of ethical concerns about AI technologies. Some of these include:
+                        <br/>
+                        <h4>Technological singularity</h4>
+                        While this topic garners a lot of public attention, many researchers are not concerned with the idea of AI surpassing human intelligence in the near future. Technological singularity is also referred to as strong AI or superintelligence. Philosopher Nick Bostrum defines superintelligence as “any intellect that vastly outperforms the best human brains in practically every field, including scientific creativity, general wisdom, and social skills.” Despite the fact that superintelligence is not imminent in society, the idea of it raises some interesting questions as we consider the use of autonomous systems, like self-driving cars. It’s unrealistic to think that a driverless car would never have an accident, but who is responsible and liable under those circumstances? Should we still develop autonomous vehicles, or do we limit this technology to semi-autonomous vehicles which help people drive safely? The jury is still out on this, but these are the types of ethical debates that are occurring as new, innovative AI technology develops.
+                        <br/>
+                        <h4>AI impact on jobs</h4>
+                        While a lot of public perception of artificial intelligence centers around job losses, this concern should probably be reframed. With every disruptive, new technology, we see that the market demand for specific job roles shifts. For example, when we look at the automotive industry, many manufacturers, like GM, are shifting to focus on electric vehicle production to align with green initiatives. The energy industry isn’t going away, but the source of energy is shifting from a fuel economy to an electric one.
+                        <br/>
+                        In a similar way, artificial intelligence will shift the demand for jobs to other areas. There will need to be individuals to help manage AI systems. There will still need to be people to address more complex problems within the industries that are most likely to be affected by job demand shifts, such as customer service. The biggest challenge with artificial intelligence and its effect on the job market will be helping people to transition to new roles that are in demand.
+                        <br/>
+                        <h4>Privacy</h4>
+                        Privacy tends to be discussed in the context of data privacy, data protection, and data security. These concerns have allowed policymakers to make more strides in recent years. For example, in 2016, GDPR legislation was created to protect the personal data of people in the European Union and European Economic Area, giving individuals more control of their data. In the United States, individual states are developing policies, such as the California Consumer Privacy Act (CCPA), which was introduced in 2018 and requires businesses to inform consumers about the collection of their data. Legislation such as this has forced companies to rethink how they store and use personally identifiable information (PII). As a result, investments in security have become an increasing priority for businesses as they seek to eliminate any vulnerabilities and opportunities for surveillance, hacking, and cyberattacks.
+                        <br/>
+                        <h4>Bias and discrimination</h4>
+                        Instances of bias and discrimination across a number of machine learning systems have raised many ethical questions regarding the use of artificial intelligence. How can we safeguard against bias and discrimination when the training data itself may be generated by biased human processes? While companies typically have good intentions for their automation efforts, Reuters (link resides outside ibm.com) highlights some of the unforeseen consequences of incorporating AI into hiring practices. In their effort to automate and simplify a process, Amazon unintentionally discriminated against job candidates by gender for technical roles, and the company ultimately had to scrap the project. Harvard Business Review (link resides outside ibm.com) has raised other pointed questions about the use of AI in hiring practices, such as what data you should be able to use when evaluating a candidate for a role.
+                        <br/>
+                        Bias and discrimination aren’t limited to the human resources function either; they can be found in a number of applications from facial recognition software to social media algorithms.
+                        <br/>
+                        As businesses become more aware of the risks with AI, they’ve also become more active in this discussion around AI ethics and values. For example, IBM has sunset its general purpose facial recognition and analysis products. IBM CEO Arvind Krishna wrote: “IBM firmly opposes and will not condone uses of any technology, including facial recognition technology offered by other vendors, for mass surveillance, racial profiling, violations of basic human rights and freedoms, or any purpose which is not consistent with our values and Principles of Trust and Transparency.”
+                        <br/>
+                        <h4>Accountability</h4>
+                        Since there isn’t significant legislation to regulate AI practices, there is no real enforcement mechanism to ensure that ethical AI is practiced. The current incentives for companies to be ethical are the negative repercussions of an unethical AI system on the bottom line. To fill the gap, ethical frameworks have emerged as part of a collaboration between ethicists and researchers to govern the construction and distribution of AI models within society. However, at the moment, these only serve to guide. Some research (link resides outside ibm.com) shows that the combination of distributed responsibility and a lack of foresight into potential consequences aren’t conducive to preventing harm to society.
+                    </div>
+                </div>
+            </li>
+            <li class="concept-container">
+                <h2>Artificial Neural Network</h2>
+                <div id="ann" class="concept-content">
+                    <p>Think of each individual node as its own <a href="https://www.ibm.com/topics/linear-regression" title="linear-regression" alt="linear-regression">linear regression</a> model, composed of input data, weights, a bias (or threshold), and an output.&nbsp;The formula would look something like this:</p>
+                    <p>∑wixi + bias = w1x1 + w2x2 + w3x3 + bias</p>
+                    <p>output = f(x) = 1 if ∑w1x1 + b&gt;= 0; 0 if ∑w1x1 + b &lt; 0</p>
+                    <p>Once an input layer is determined, weights are assigned. These weights help determine the importance of any given variable, with larger ones contributing more significantly to the output compared to other inputs. All inputs are then multiplied by their respective weights and then summed. Afterward, the output is passed through an activation function, which determines the output. If that output exceeds a given threshold, it “fires” (or activates) the node, passing data to the next layer in the network. This results in the output of one node becoming in the input of the next node. This process of passing data from one layer to the next layer defines this neural network as a feedforward network.</p>
+                    <p>Let’s break down what one single node might look like using binary values. We can apply this concept to a more tangible example, like whether you should go surfing (Yes: 1, No: 0). The decision to go or not to go is our predicted outcome, or y-hat. Let’s assume that there are three factors influencing your decision-making:</p>
+                    <ol><li>Are the waves good? (Yes: 1, No: 0)</li><li>Is the line-up empty? (Yes: 1, No: 0)</li><li>Has there been a recent shark attack? (Yes: 0, No: 1)</li></ol>
+                    <p>Then, let’s assume the following, giving us the following inputs:</p>
+                    <ul><li>X1 = 1, since the waves are pumping</li><li>X2 = 0, since the crowds are out</li><li>X3 = 1, since there hasn’t been a recent shark attack</li></ul>
+                    <p>Now, we need to assign some weights to determine importance. Larger weights signify that particular variables are of greater importance to the decision or outcome.</p>
+                    <ul><li>W1 = 5, since large swells don’t come around often</li><li>W2 = 2, since you’re used to the crowds</li><li>W3 = 4, since you have a fear of sharks</li></ul>
+                    <p>Finally, we’ll also assume a threshold value of 3, which would translate to a bias value of –3. With all the various inputs, we can start to plug in values into the formula to get the desired output.</p>
+                    <p>Y-hat = (1*5) + (0*2) + (1*4) – 3 = 6</p>
+                    <p>If we use the activation function from the beginning of this section, we can determine that the output of this node would be 1, since 6 is greater than 0. In this instance, you would go surfing; but if we adjust the weights or the threshold, we can achieve different outcomes from the model. When we observe one decision, like in the above example, we can see how a neural network could make increasingly complex decisions depending on the output of previous decisions or layers.</p>
+                    <p>In the example above, we used perceptrons to illustrate some of the mathematics at play here, but neural networks leverage sigmoid neurons, which are distinguished by having values between 0 and 1. Since neural networks behave similarly to decision trees, cascading data from one node to another, having x values between 0 and 1 will reduce the impact of any given change of a single variable on the output of any given node, and subsequently, the output of the neural network.</p>
+                    <p>As we start to think about more practical use cases for neural networks, like image recognition or classification, we’ll leverage supervised learning, or labeled datasets, to train the algorithm. As we train the model, we’ll want to evaluate its accuracy using a cost (or loss) function. This is also commonly referred to as the mean squared error (MSE). In the equation below,</p>
+                    <ul><li><em>i </em>represents the index of the sample,</li><li>y-hat is the predicted outcome,</li><li>y is the actual value, and</li><li><em>m</em> is the number of samples.</li></ul>
+                    <p>𝐶𝑜𝑠𝑡 𝐹𝑢𝑛𝑐𝑡𝑖𝑜𝑛= 𝑀𝑆𝐸=1/2𝑚 ∑129_(𝑖=1)^𝑚▒(𝑦&nbsp;̂^((𝑖) )−𝑦^((𝑖) ) )^2</p>
+                    <p>Ultimately, the goal is to minimize our cost function to ensure correctness of fit for any given observation. As the model adjusts its weights and bias, it uses the cost function and reinforcement learning to reach the point of convergence, or the local minimum. The process in which the algorithm adjusts its weights is through gradient descent, allowing the model to determine the direction to take to reduce errors (or minimize the cost function). With each training example, the parameters of the model adjust to gradually converge at the minimum.&nbsp;&nbsp;</p>
+                    <p>See this <a href="https://developer.ibm.com/articles/l-neural">IBM Developer article for a deeper explanation of the quantitative concepts involved in neural networks</a>.</p>
+                    <p>Most deep neural networks are feedforward, meaning they flow in one direction only, from input to output. However, you can also train your model through backpropagation; that is, move in the opposite direction from output to input. Backpropagation allows us to calculate and attribute the error associated with each neuron, allowing us to adjust and fit the parameters of the model(s) appropriately.</p>
+                </div>
+            </li>
+        </ul>
     </main>
     <footer>
         <p>©️ 2024 Brian Madroñero | WDD 131</p>

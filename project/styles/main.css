@@ -10,12 +10,19 @@
   --nav-background-color: #001929d6;
   --nav-link-color: #fff;
 }
+a {
+	color: var(--accent2-color);
+	text-decoration: none;
+}
+a:visited {
+	color: var(--accent2-color);
+}
 body {
+  background-color: #f4f4f4;
   font-family: var(--paragraph-font);
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 header {
 	background: var(--secondary-color);
@@ -32,6 +39,9 @@ h2,
 h3 {
   color: var(--accent1-color);
 }
+img {
+	max-width: 100%;
+}
 nav {
 	background: var(--nav-background-color);
 	display: flex;
@@ -39,6 +49,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
+	z-index: 10;
 }
 nav a, nav a:visited {
 	text-decoration: none;
@@ -49,7 +60,6 @@ nav ul {
 	display: flex;
 	gap: 1rem;
 	justify-content: center;
-	list-style: none;
 	margin: auto;
 	text-wrap: nowrap;
 	padding: 0;
@@ -80,4 +90,74 @@ main {
   overflow: hidden;
   padding: 20px 10%;
   width: 80%;
+}
+ul {
+	list-style: none;
+}
+.card {
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	color: #232323;
+	margin: 2em;
+	padding: 1em;
+}
+.card:hover {
+	cursor: pointer;
+	transform: scale(1.02, 1.02);
+	transition: all 1s;
+}
+.concept-container {
+	position: relative;
+	padding-left: 30px;
+}
+.concept-container h2 {
+	cursor: pointer;
+	color: var(--accent2-color);
+}
+.concept-container::before {
+	content: '→';
+	color: var(--accent2-color);
+	position: absolute;
+	left: 0;
+}
+.concept-content * {
+	display: none;
+}
+.concept-content.expanded * {
+	display: inherit;
+}
+.newsletter-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+.newsletter-container form {
+	display: flex;
+}
+.newsletter-container input {
+	border: none;
+	font-size: 14pt;
+	padding: .5em 1em;
+}
+.newsletter-container input[type="email"] {
+	border-radius: 6px 0 0 6px;
+	margin-left: .5em;
+}
+.newsletter-container input[type="submit"] {
+	background-color: var(--accent2-color);
+	border-radius: 0 6px 6px 0;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+}
+.newsletter-container label {
+	font-size: 14pt;
+}
+#subscribers {
+	margin-top: .4em;
+	font-size: 8pt;
+}
+.subtext {
+	padding-left: 1.3em;
 }
