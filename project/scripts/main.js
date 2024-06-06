@@ -11,7 +11,7 @@ conceptContainer$.forEach((element) => {
 
 if (
   document.location.pathname == "/project/newsletter.html" ||
-  "/wdd131/project/newsletter.html"
+  document.location.pathname == "/wdd131/project/newsletter.html"
 ) {
   addNewsletterSubscribers();
 }
