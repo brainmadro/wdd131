@@ -1,0 +1,26 @@
+@media screen and (max-width: 576px) {
+	main {
+		padding: 18px 5%;
+		width: 90%;
+	}
+	ul {
+		padding-left: 0;
+	}
+	.card {
+		margin: 2em 0;
+	}
+	.newsletter-container form {
+		flex-direction: column;
+	}
+	.newsletter-container input[type="email"] {
+		display: block;
+		border-radius: 6px 6px 0 0;
+		margin-left: 0;
+	}
+	.newsletter-container input[type="submit"] {
+		border-radius: 0 0 6px 6px;
+	}
+	.subtext {
+		padding-left: .8em;
+	}
+}
